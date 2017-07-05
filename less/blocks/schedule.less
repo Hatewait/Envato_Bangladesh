@@ -1,0 +1,97 @@
+.schedule {
+  position: relative;
+  border:1px solid transparent;
+  width: 1032px;
+  height: 375px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow:hidden;
+  color: @white;
+
+  tr {
+    height: 76px;
+  }
+}
+
+.schedule__header {
+  background: none;
+  background-color: @green;
+
+  td {
+    font-size: 1.875em;
+    font-weight: 700;
+  }
+}
+
+.schedule__time {
+  padding-left: 80px;
+}
+
+.schedule__dark {
+  background-color: #373737;
+
+  td {
+    font-size: 1.375em;
+  }
+}
+
+.schedule__light {
+  background-color: #4b4d4f;
+
+  td {
+    font-size: 1.375em;
+  }
+}
+
+.schedule__figures {
+  padding-left: 46px;
+  width: 298px;
+}
+
+.schedule__round {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 4px;
+    background-color: @black;
+    top: 17px;
+    left: 9px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 16px;
+    background-color: @black;
+    top: 10px;
+    left: 15px;
+  }
+
+  &--1 {
+    right: 48px;
+    top: 95px;
+  }
+
+  &--2 {
+    right: 48px;
+    top: 172px;
+  }
+
+  &--3 {
+    right: 48px;
+    top: 246px;
+  }
+
+  &--4 {
+    right: 48px;
+    top: 319px;
+  }
+}

@@ -14,6 +14,19 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/header-icons.png");
+    width: 718px;
+    height: 167px;
+    bottom: -90px;
+    left: 60px;
+    background-repeat: no-repeat;
+    z-index: 10;
+    transform: rotate(-5deg);
+  }
 }
 
 .header__wrapper {

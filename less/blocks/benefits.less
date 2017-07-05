@@ -1,0 +1,97 @@
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 85px;
+}
+
+.benefits__wrapper {
+  width: 300px;
+  padding-top: 368px;
+  position: relative;
+
+  &--community {
+    margin-right: 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 121px;
+      left: 53px;
+      background-image: url("../img/community-icon.png");
+      width: 198px;
+      height: 211px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--talk {
+    margin-right: 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 133px;
+      left: 53px;
+      background-image: url("../img/icon-talk-shop.png");
+      width: 198px;
+      height: 211px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--war {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 131px;
+      left: 53px;
+      background-image: url("../img/icon-war-stories.png");
+      width: 198px;
+      height: 211px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.benefits__heading {
+  margin: 0;
+  font-size: 2.188em;
+  text-align: center;
+
+  &--talk {
+    padding-top: 3px;
+    padding-left: 4px;
+  }
+
+  &--war {
+    padding-left: 15px;
+    padding-top: 3px;
+  }
+}
+
+.benefits__text {
+  margin: 0;
+  font-size: 0.875em;
+  font-weight: 300;
+  text-align: center;
+  padding-left: 5px;
+  padding-top: 1px;
+
+  &--community {
+    padding-top: 15px;
+  }
+
+  &--talk {
+    padding-top: 12px;
+    padding-left: 3px;
+  }
+
+  &--war {
+    padding-top: 13px;
+    padding-left: 24px;
+  }
+}

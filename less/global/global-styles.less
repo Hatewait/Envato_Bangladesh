@@ -3,6 +3,8 @@
 }
 
 body {
+  max-width: 1366px;
+  margin: 0 auto;
   font-size: 100%;
   line-height: 1.2;
   font-family: 'Roboto', sans-serif;
@@ -15,8 +17,44 @@ img {
   height: auto;
 }
 
+a, button {
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
 .wrapper {
   width: 1170px;
   padding: 0 70px;
   margin: 0 auto;
+}
+
+.grey {
+  margin-bottom: 295px;
+  position: relative;
+  background-color: #4b4d4f;
+  width: 100%;
+  min-height: 384px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/rectangle-grey-bottom.png");
+    width: 100%;
+    height: 184px;
+    bottom: -183px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/rectangle-grey-top.png");
+    width: 100%;
+    height: 184px;
+    top: -158px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

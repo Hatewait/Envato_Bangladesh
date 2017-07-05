@@ -1,0 +1,68 @@
+.header {
+  position: relative;
+  background-color: @graphite;
+  padding-top: 45px;
+  min-height: 630px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/header-rectangle.png");
+    width: 100%;
+    height: 184px;
+    bottom: -153px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__time {
+  margin: 113px 0 0 28px;
+  width: 970px;
+  height: 200px;
+  border: 2px solid @green;
+  border-radius: 20px;
+
+  img {
+    margin: 0 auto;
+    width: 812px;
+    height: 94px;
+    display: block;
+    margin-top: 29px;
+  }
+}
+
+.header__time-wrapper {
+  margin: 24px 0 0 107px;
+}
+
+.header__time-details {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.563em;
+  text-transform: uppercase;
+  color: @white;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--days {
+    margin-right: 153px;
+  }
+
+  &--hours {
+    margin-right: 127px;
+  }
+
+  &--minutes {
+    margin-right: 103px;
+  }
+}

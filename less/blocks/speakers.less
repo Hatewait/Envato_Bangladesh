@@ -51,20 +51,31 @@
 }
 
 .speakers__title {
+  position: relative;
   display: block;
   width: 188px;
-  padding: 35px 0 35px 35px;
+  padding: 35px 0 26px 35px;
   font-size: 2.813em;
   line-height: 43px;
   font-weight: 700;
   color: @white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 13px;
+    left: 31px;
+    width: 85px;
+    height: 7px;
+    background-color: @white;
+  }
 }
 
 .speakers__descr {
   display: block;
   width: 233px;
-  padding-left: 35px;
-  padding-bottom: 45px;
+  padding-left: 32px;
+  padding-bottom: 52px;
   font-size: 1.125em;
   color: @white;
 }
@@ -73,13 +84,13 @@
   display: flex;
   width: 157px;
   height: 40px;
-  margin-left: 35px;
+  margin-left: 30px;
 }
 
 .speakers__social-link {
   width: 32px;
   height: 34px;
-  margin-right: 10px;
+  margin-right: 8px;
 
   &:last-child {
     margin-right: 0;

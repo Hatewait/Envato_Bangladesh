@@ -1,5 +1,6 @@
 .sponsor {
   color: @white;
+  margin-bottom: 263px;
 }
 
 .sponsor__heading {
@@ -16,15 +17,13 @@
   text-align: center;
   font-size: 0.875em;
   font-weight: 300;
-
-  &:last-child {
-    margin-bottom: 50px;
-  }
 }
 
 .sponsor__btn {
-  margin: 0 auto;
-  margin-top: 60px;
+  position: absolute;
+  bottom: -32px;
+  left: 585px;
+  z-index: 10;
   padding-top: 17px;
   display: block;
   text-align: center;
@@ -33,19 +32,33 @@
   border-radius: 15px;
   color: @white;
   text-decoration: none;
-  font-size: 1.125em;
+  font-size: 1.375em;
   background-color: @green;
 }
 
 .sponsor__icons {
+  display: flex;
   width: 600px;
   margin: 0 auto;
+  margin-top: 47px;
 }
 
 .sponsor__icon {
-  margin-right: 83px;
+  margin-right: 79px;
 
-  &:last-child {
+  &:nth-child(1) {
+    margin-left: -8px;
+  }
+
+
+  &:nth-child(2) {
+    margin-left: 3px;
+  }
+
+  &:nth-child(3) {
     margin-right: 0;
+    margin-top: 31px;
+    margin-left: 8px;
+    display: block;
   }
 }
